@@ -60,7 +60,7 @@ app.use("/", indexRoutes);
 app.use("/campgrounds", campgroundRoutes); //This takes all the routes in campground and append that with /campgrounds
 app.use("/campgrounds/:id/comments", commentRoutes);
 
-app.listen(process.env.PORT, process.env.IP, function(){
+app.listen(process.env.PORT || 3000, process.env.IP, function(){
     console.log("Yelpcamp App Server is listening!!!");
 });
 
