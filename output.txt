@@ -1,0 +1,82 @@
+Yelpcamp App Server is listening!!!
+USER OBJECT undefined
+GET /campgrounds - RETRIEVED ALL CAMPGROUNDS
+GET /campgrounds/:id SHOWING CAMPGROUND
+{ createdby: { username: 'test', id: 5ad9f845d0a48e1c0319eb41 },
+  comments: [],
+  _id: 5ad9f8ecd0a48e1c0319eb44,
+  name: 'Coorg',
+  image: 'https://s3.ap-south-1.amazonaws.com/zo-media/cache/_17664eb19c435750a099d7d942d59509/Coorg-4_1000x800.jpg',
+  description: 'Coorg is in Karnataka',
+  __v: 0 }
+GET /campgrounds/:id SHOWING CAMPGROUND
+{ createdby: { username: 'test', id: 5ad9f845d0a48e1c0319eb41 },
+  comments: 
+   [ { author: [Object],
+       _id: 5ada016da502191d410bf256,
+       text: 'asdfasdfasdf',
+       __v: 0 },
+     { author: [Object],
+       _id: 5af6f28776542e16368702c8,
+       text: 'asdfsadfasdfasdfsadfasdfasdfasasasasasasasasasasasasasasasasasasasasasdfsadfasdfasdfsadfasdfasdfasasasasasasasasasasasasasasasasasasasasasdfsadfasdfasdfsadfasdfasdfasasasasasasasasasasasasasasasasasasasasasdfsadfasdfasdfsadfasdfasdfasasasasasasasasasasasasasasasasasasasasasdfsadfasdfasdfsadfasdfasdfasasasasasasasasasasasasasasasasasasasasasdfsadfasdfasdfsadfasdfasdfasasasasasasasasasasasasasasasasasasasasasdfsadfasdfasdfsadfasdfasdfasasasasasasasasasasasasasasasasasasasasasdfsadfasdfasdfsadfasdfasdfasasasasasasasasasasasasasasasasasasasasasdfsadfasdfasdfsadfasdfasdfasasasasasasasasasasasasasasasasasasasasasdfsadfasdfasdfsadfasdfasdfasasasasasasasasasasasasasasasasasasasasasdfsadfasdfasdfsadfasdfasdfasasasasasasasasasasasasasasasasasasasasasdfsadfasdfasdfsadfasdfasdfasasasasasasasasasasasasasasasasasasasasasdfsadfasdfasdfsadfasdfasdfasasasasasasasasasasasasasasasasasasasasasdfsadfasdfasdfsadfasdfasdfasasasasasasasasasasasasasasasasasasasasasdfsadfasdfasdfsadfasdfasdfasasasasasasasasasasasasasasasasasasasasasdfsadfasdfasdfsadfasdfasdfasasasasasasasasasasasasasasasasasasasasasdfsadfasdfasdfsadfasdfasdfasasasasasasasasasasasasasasasasasasasasasdfsadfasdfasdfsadfasdfasdfasasasasasasasasasasasasasasasasasasasasasdfsadfasdfasdfsadfasdfasdfasasasasasasasasasasasasasasasasasasasasasdfsadfasdfasdfsadfasdfasdfasasasasasasasasasasasasasasasasasasasasasdfsadfasdfasdfsadfasdfasdfasasasasasasasasasasasasasasasasasasasasasdfsadfasdfasdfsadfasdfasdfasasasasasasasasasasasasasasasasasasasasasdfsadfasdfasdfsadfasdfasdfasasasasasasasasasasasasasasasasasasasasasdfsadfasdfasdfsadfasdfasdfasasasasasasasasasasasasasasasasasasasasasdfsadfasdfasdfsadfasdfasdfasasasasasasasasasasasasasasasasasasasasasdfsadfasdfasdfsadfasdfasdfasasasasasasasasasasasasasasasasasasasasasdfsadfasdfasdfsadfasdfasdfasasasasasasasasasasasasasasasasasasasasasdfsadfasdfasdfsadfasdfasdfasasasasasasasasasasasasasasasasasasasasasdfsadfasdfasdfsadfasdfasdfasasasasasasasasasasasasasasasasasasasasasdfsadfasdfasdfsadfasdfasdfasasasasasasasasasasasasasasasasasasasasasdfsadfasdfasdfsadfasdfasdfasasasasasasasasasasasasasasasasasasasasasdfsadfasdfasdfsadfasdfasdfasasasasasasasasasasasasasasasasasasasasasdfsadfasdfasdfsadfasdfasdfasasasasasasasasasasasasasasasasasasasasasdfsadfasdfasdfsadfasdfasdfasasasasasasasasasasasasasasasasasasasas',
+       __v: 0 },
+     { author: [Object],
+       _id: 5af7014af9a61d198abb3587,
+       text: 'ashok data1',
+       __v: 0 },
+     { author: [Object],
+       _id: 5af7018f10ac1519b6403bfd,
+       text: 'test12',
+       __v: 0 },
+     { author: [Object],
+       _id: 5af71e2126a4791f7de2bf3d,
+       text: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
+       __v: 0 } ],
+  _id: 5ad9fafea51be51c1fdc40bf,
+  name: 'Kodaikanal2',
+  image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Blue_Kodaikanal.jpg/1920px-Blue_Kodaikanal.jpg',
+  description: 'Kodaikanal is in Tamilnadu.',
+  __v: 6,
+  price: '400' }
+USER OBJECT undefined
+GET /campgrounds - RETRIEVED ALL CAMPGROUNDS
+GET /campgrounds/:id SHOWING CAMPGROUND
+{ createdby: { username: 'test', id: 5ad9f845d0a48e1c0319eb41 },
+  comments: [],
+  _id: 5ad9fdc460a5cb1c7c96fa8e,
+  name: 'Kodaikanal',
+  image: 'https://upload.wikimedia.org/wikipedia/commons/9/9b/Munnar66.jpg',
+  price: '6000',
+  description: 'Nice place to visit',
+  __v: 0 }
+GET /campgrounds/:id SHOWING CAMPGROUND
+{ createdby: { username: 'test', id: 5ad9f845d0a48e1c0319eb41 },
+  comments: [],
+  _id: 5ad9f8bad0a48e1c0319eb43,
+  name: 'Ooty',
+  image: 'https://images.thrillophilia.com/image/upload/s--zgAEK5ko--/c_fill,f_auto,fl_strip_profile,h_800,q_auto,w_1300/v1/images/photos/000/031/806/original/ooty_1.jpg.jpg',
+  description: 'Beautiful place to visit',
+  __v: 0 }
+USER OBJECT undefined
+GET /campgrounds - RETRIEVED ALL CAMPGROUNDS
+GET /campgrounds/:id SHOWING CAMPGROUND
+{ createdby: { username: 'test', id: 5ad9f845d0a48e1c0319eb41 },
+  comments: [],
+  _id: 5ad9fdc460a5cb1c7c96fa8e,
+  name: 'Kodaikanal',
+  image: 'https://upload.wikimedia.org/wikipedia/commons/9/9b/Munnar66.jpg',
+  price: '6000',
+  description: 'Nice place to visit',
+  __v: 0 }
+USER OBJECT undefined
+GET /campgrounds - RETRIEVED ALL CAMPGROUNDS
+GET /campgrounds/:id SHOWING CAMPGROUND
+{ createdby: { username: 'test', id: 5ad9f845d0a48e1c0319eb41 },
+  comments: [],
+  _id: 5ad9f8bad0a48e1c0319eb43,
+  name: 'Ooty',
+  image: 'https://images.thrillophilia.com/image/upload/s--zgAEK5ko--/c_fill,f_auto,fl_strip_profile,h_800,q_auto,w_1300/v1/images/photos/000/031/806/original/ooty_1.jpg.jpg',
+  description: 'Beautiful place to visit',
+  __v: 0 }
+USER OBJECT undefined
+GET /campgrounds - RETRIEVED ALL CAMPGROUNDS

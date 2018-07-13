@@ -1,0 +1,47 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Logs</title>
+	<script type="text/javascript" src= "https://code.jquery.com/jquery-2.1.4.js"></script>
+</head>
+<body>
+<div id="outputlog">
+    
+
+</div>
+
+<div id="bottom">
+    
+</div>
+<script type="text/javascript">
+setInterval(function() 
+{
+    // $('#outputlog').load('output.txt');
+    $.ajax({
+        type: "GET",
+          url: "/renderlogs",
+          dataType: "text"
+    }).done(function(data){
+        
+        var oldData = $('#outputlog').html();
+        console.log(oldData);
+        
+        $('#outputlog').html(oldData + data.replace(/\n/g, "<br/>").replace(/ /g,"&nbsp;"));
+        document.getElementById( 'bottom' ).scrollIntoView();
+    });
+
+    
+}, 2000);
+
+
+</script>
+
+
+</body>
+</html>

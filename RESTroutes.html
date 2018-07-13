@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Yelpcamp!!!!</title>
+	
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+    
+
+	   
+        <div class="container-fluid">
+            
+            <h1>RESTful routes</h1>
+            
+        </div>
+        
+        <table border="1px">
+            <tr style="background:silver;">
+                <th>Name</th>
+                <th>Path</th>
+                <th>HTTP verb</th>
+                <th>Purpose</th>
+            </tr>
+            <tr>
+                <td>index</td>
+                <td>/dogs</td>
+                <td>GET</td>
+                <td>List all dogs</td>
+            </tr>
+            <tr style="background:lightgreen;">
+                <td>New</td>
+                <td>/dogs/new</td>
+                <td>GET</td>
+                <td>Show new dog form</td>
+            </tr>
+            <tr style="background:lightgreen;">
+                <td>Create</td>
+                <td>/dogs</td>
+                <td>POST</td>
+                <td>Create a new dog, then redirect somewhere</td>
+                
+            </tr>
+            <tr style="background:skyblue;">
+                <td>Show</td>
+                <td>/dogs/:id</td>
+                <td>GET</td>
+                <td>Show info about one specific dog</td>
+                
+            </tr>
+            <tr style="background:lemonchiffon;">
+                <td>Edit</td>
+                <td>/dogs/:id/edit</td>
+                <td>GET</td>
+                <td>Show edit form for one dog</td>
+                
+            </tr>
+            <tr style="background:lemonchiffon;">
+                <td>Update</td>
+                <td>/dogs/:id</td>
+                <td>PUT</td>
+                <td>Update a particular dog, then redirect somewhere</td>
+                
+            </tr>
+            <tr style="background:lightcoral;">
+                <td>Destroy</td>
+                <td>/dogs/:id</td>
+                <td>DELETE</td>
+                <td>Delete a particular dog, then redirect somewhere</td>
+                
+            </tr>
+            
+        </table>
+    </nav>

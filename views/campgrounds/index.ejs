@@ -1,0 +1,97 @@
+<% include ../partials/header %>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="false">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="exampleModalLabel">Modal title</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="" id="imagepreview" style="max-width:100%; max-height:100%;" >
+      </div>
+      <hr>
+      <p class="modal-body" id="exampleModalDesc">Modal Desc</p>
+    </div>
+  </div>
+</div>
+
+
+    
+    <div class="container">
+        <header class="jumbotron">
+            <div class="container">
+                <h1>Welcome to Yelpcamp!!!</h1>
+                <p>View our hand-picked campgrounds</p>
+                <p>
+                    <a class="btn btn-primary btn-lg" href="/campgrounds/new">Add New campground</a>
+                </p>
+            </div>
+        </header>
+    
+        <div class="row text-center" style="display:flex; flex-wrap:wrap;">
+        
+            <% campgrounds.forEach(function (campground) { %>
+                <div class="col-md-3 col-sm-6">
+                    
+                    
+                     <a href="#" id="pop">
+                        <div class="thumbnail" data-toggle="modal" data-target="#exampleModal">
+                           
+                            <img id="imageresource" src="<%= campground.image %>">
+                            <div class="caption" >
+                                <h4 id="campgroundname"><%= campground.name %> </h4>
+                                
+                                <p hidden id="description"><%= campground.description %> </p>
+                            </div>
+                            
+                        </div>
+                    </a>
+
+                <a href="/campgrounds/<%= campground._id %>">More Info</a>
+                </div>
+                
+            <% }); %>
+        </div>
+    </div>
+
+
+
+<script>
+//     $("#pop").on("click", function() {
+//   //$('#imagepreview').attr('src',  $(this).find('img').attr('src') ); // here asign the image to the modal when the user click the enlarge link
+   //$('#imagemodal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
+  
+
+   
+   var myLink = document.querySelectorAll("#pop");
+HTMLCollection.prototype.forEach = Array.prototype.forEach;
+NodeList.prototype.forEach = Array.prototype.forEach;
+
+console.log(myLink.length);
+
+myLink.forEach(function(eachLink){
+
+	
+	eachLink.addEventListener("click", function(){
+        $('#imagepreview').attr('src',  $(this).find('img').attr('src') ); // here asign the image to the modal when the user click the enlarge link
+        $('#exampleModalLabel').text($(this).find('#campgroundname').text() );
+		$('#exampleModalDesc').text($(this).find('#description').text() ); 
+
+// 		 $(this).find('img').attr('src')
+		 
+  $('#imagemodal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
+      console.log("ashok");
+	});
+
+});
+   
+
+    
+</script>
+
+<% include ../partials/footer %>
