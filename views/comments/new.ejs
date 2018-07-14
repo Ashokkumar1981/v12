@@ -3,7 +3,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-3">
-            <p class="lead">YelpCamp</p>
+            <p class="lead">Cars Gallery</p>
             <div class="list-group">
                 <li class="list-group-item">Info 1</li>
                 <li class="list-group-item">Info 2</li>
@@ -12,11 +12,11 @@
         </div>
         
         <div class="col-md-6">
-        <h1 style="text-align:center;">Add New Comment to <%= campground.name %> </h1>    
+        <h1 style="text-align:center;">Add New Comment to <%= car.name %> </h1>    
         
         <div style="width:100%;margin:10px auto;">
             
-            <form action="/campgrounds/<%= campground._id %>/comments" method="POST">
+            <form action="/cars/<%= car._id %>/comments" method="POST">
                 
                 
                 <div class="form-group">
@@ -27,7 +27,7 @@
                 </div>
             </form>
             
-            <a href="/campgrounds">Go Back</a>
+            <a href="/cars">Go Back</a>
         </div>
         </div>
     </div>

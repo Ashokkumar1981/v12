@@ -11,14 +11,14 @@ var express                 = require("express"),
     methodOverride          = require("method-override"),
     
     app = express(),
-    campground =require("./models/campground"),
+    car =require("./models/car"),
     comment =require("./models/comment"),
     seedDB = require("./seeds"),
     user = require("./models/user"),
     
     // requireing routes
     commentRoutes = require("./routes/comments"),
-    campgroundRoutes = require("./routes/campgrounds"),
+    carRoutes = require("./routes/cars"),
     indexRoutes = require("./routes/index");
     
     
@@ -28,7 +28,7 @@ var express                 = require("express"),
 app.use(bodyparser.urlencoded({extended:true}));
 app.use(express.static(__dirname + "/public"));
 app.set("view engine","ejs");
-mongoose.connect("mongodb://localhost/yelp_camp_v12");
+mongoose.connect("mongodb://localhost/cars_v12");
 app.use(methodOverride("_method"));
 app.use(flash());
 
@@ -57,10 +57,10 @@ app.use(function(req,res,next){
 });
 
 app.use("/", indexRoutes);
-app.use("/campgrounds", campgroundRoutes); //This takes all the routes in campground and append that with /campgrounds
-app.use("/campgrounds/:id/comments", commentRoutes);
+app.use("/cars", carRoutes); //This takes all the routes in car and append that with /cars
+app.use("/cars/:id/comments", commentRoutes);
 
-app.listen(process.env.PORT || 3000, process.env.IP, function(){
-    console.log("Yelpcamp App Server is listening!!!");
+app.listen(3000, "0.0.0.0", function(){
+    console.log("Cars Gallery App Server is listening!!!");
 });
 

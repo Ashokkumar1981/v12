@@ -17,7 +17,7 @@
         <div style="width:100%;margin:10px auto;">
             
             
-            <form action="/campgrounds/<%=campground_id%>/comments/<%=comment._id%>?_method=PUT" method="POST">
+            <form action="/cars/<%=car_id%>/comments/<%=comment._id%>?_method=PUT" method="POST">
                 
                 <div class="form-group">
                     <textarea  class="form-control" type="text" name="comment[text]" rows="3" required><%=comment.text%></textarea>
@@ -27,7 +27,7 @@
                 </div>
             </form>
             
-            <a href="/campgrounds">Go Back</a>
+            <a href="/cars">Go Back</a>
         </div>
         </div>
     </div>

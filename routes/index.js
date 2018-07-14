@@ -1,6 +1,6 @@
 var express = require("express");
 var router  = express.Router();
-var campground =require("../models/campground");
+var car =require("../models/car");
 var user = require("../models/user");
 var passport = require("passport");
 var Tail = require('tail').Tail;
@@ -34,10 +34,10 @@ router.post("/register",function(req,res){
         }
         else
         {
-            req.flash("success", "Welcome to Yelpcamp" + user.username);
+            req.flash("success", "Welcome to Cars Gallery: " + user.username);
             
             passport.authenticate("local")(req,res,function(){
-                res.redirect("/campgrounds");
+                res.redirect("/cars");
             });
         }
     });
@@ -54,7 +54,7 @@ router.get("/login",function(req,res){
 // Middleware - Some code runs before our final route call back here. It sits between beginning and end of the route.
 // app.post(ROUTE,MIDDLEWARE,CALLBACK)
 router.post("/login", passport.authenticate("local",{
-    successRedirect:"/campgrounds",
+    successRedirect:"/cars",
     failureRedirect:"/login"
     }),function(req,res){
     
@@ -68,7 +68,7 @@ router.get("/logout",function(req,res){
     
     req.logout(); // passport destroys all the user data in the session
     req.flash("success","Logged you out");
-    res.redirect("/campgrounds");
+    res.redirect("/cars");
 });
 
 

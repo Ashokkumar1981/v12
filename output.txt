@@ -1,4 +1,4 @@
-Yelpcamp App Server is listening!!!
+Cars Gallery App Server is listening!!!
 USER OBJECT undefined
 GET /campgrounds - RETRIEVED ALL CAMPGROUNDS
 GET /campgrounds/:id SHOWING CAMPGROUND

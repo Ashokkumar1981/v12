@@ -1,23 +1,23 @@
 // ALL MIDDLEWARE GOES HERE
-var campground =require("../models/campground");
+var car =require("../models/car");
 var comment =require("../models/comment");
 
 var middlewareObj={};
 
-    middlewareObj.checkCampgroundOwnership= function(req,res,next){
+    middlewareObj.checkcarOwnership= function(req,res,next){
             console.log("MIDDLEWARE CALLED");
             if(req.isAuthenticated()){
-                campground.findById(req.params.id,function(err,selectedCampground){
+                car.findById(req.params.id,function(err,selectedcar){
                 
                 if(err){
                     console.log(err);
-                    req.flash("error", "Campground not found");
+                    req.flash("error", "car not found");
                     res.redirect("back");
                 }
                 else
                 {
                     
-                    if(selectedCampground.createdby.id.equals(req.user._id)){
+                    if(selectedcar.createdby.id.equals(req.user._id)){
                         next();
                     }
                     else
