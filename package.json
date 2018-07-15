@@ -22,9 +22,10 @@
   },
   "devDependencies": {},
   "scripts": {
-    // "start": "mongod --dbpath=/data --port 27017 --fork --logpath /var/log/mongod.log",
-    // "start": "mongod",
+     "start": "mongod --dbpath=/data --port 27017 --fork --logpath /var/log/mongod.log",
     "test": "echo \"Error: no test specified\" && exit 1"
+
+    
   },
   "author": "",
   "license": "ISC"
