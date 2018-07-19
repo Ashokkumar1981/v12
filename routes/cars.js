@@ -110,7 +110,7 @@ router.get("/:id/edit",middleware.checkcarOwnership,function(req,res){
 });
 
 // UPDATE car ROUTE
-router.put("/:id",function(req,res){
+router.post("/:id",function(req,res){
 
     // findByIdAndUpdate is a build 
     car.findByIdAndUpdate(req.params.id,req.body.car, function (err,car){
@@ -121,6 +121,7 @@ router.put("/:id",function(req,res){
         }
         else
         {
+            console.log("Update car Route called.");
             res.redirect("/cars/"+req.params.id);
         }
     });

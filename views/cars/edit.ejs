@@ -6,7 +6,8 @@
         
         <div style="width:30%;margin:25px auto;">
             
-            <form action="/cars/<%=car._id%>?_method=PUT" method="POST">
+            <!-- <form action="/cars/<%=car._id%>?_method=PUT" method="POST"> -->
+            <form action="/cars/<%=car._id%>" method="POST">
                 <div class="form-group">
                     <input class="form-control" type="text" name="car[name]" value = <%= car.name%>>
                 </div>

@@ -121,6 +121,7 @@ router.put("/:comment_id", function(req,res){
         }
         else
         {
+            
             res.redirect("/cars/"+ req.params.id);
         }
     });

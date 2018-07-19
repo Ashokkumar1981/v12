@@ -42,24 +42,30 @@ body{
 
 
 .slideshow li:nth-child(1) { 
-  background-image: url(https://imgd.aeplcdn.com/1056x594/cw/ec/32889/Volvo-XC40-Right-Front-Three-Quarter-130765.jpg) 
+  background-image: url(../images/landing/Volvo-XC40-Right-Front-Three-Quarter-130765.jpg) 
 }
 .slideshow li:nth-child(2) { 
-  background-image: url(https://imgd.aeplcdn.com/1056x594/cw/ec/20227/BMW-X1-Exterior-65925.jpg);
+  background-image: url(../images/landing/BMW-X1-Exterior-65925.jpg);
   animation-delay: 10s; 
 }
 .slideshow li:nth-child(3) { 
-  background-image: url(https://imgd.aeplcdn.com/1056x594/cw/ec/26250/MercedesBenz-CLA-Exterior8-85841.jpg);
+  background-image: url(../images/landing/MercedesBenz-CLA-Exterior8-85841.jpg);
   animation-delay: 20s; 
 }
 .slideshow li:nth-child(4) { 
-  background-image: url(https://imgd.aeplcdn.com/1056x594/cw/ec/22613/Audi-A4-Exterior-79787.jpg);
+  background-image: url(../images/landing/Audi-A4-Exterior-79787.jpg);
   animation-delay: 30s; 
 }
 .slideshow li:nth-child(5) { 
-  background-image: url(https://imgd.aeplcdn.com/1056x594/cw/ec/29527/Jeep-Compass-Exterior-98854.jpg);
+  background-image: url(../images/landing/Jeep-Compass-Exterior-98854.jpg);
   animation-delay: 40s; 
 }
+
+/* https://imgd.aeplcdn.com/1056x594/cw/ec/32889/Volvo-XC40-Right-Front-Three-Quarter-130765.jpg
+https://imgd.aeplcdn.com/1056x594/cw/ec/20227/BMW-X1-Exterior-65925.jpg
+https://imgd.aeplcdn.com/1056x594/cw/ec/26250/MercedesBenz-CLA-Exterior8-85841.jpg
+https://imgd.aeplcdn.com/1056x594/cw/ec/22613/Audi-A4-Exterior-79787.jpg
+https://imgd.aeplcdn.com/1056x594/cw/ec/29527/Jeep-Compass-Exterior-98854.jpg */
 
 
 @keyframes imageAnimation { 
