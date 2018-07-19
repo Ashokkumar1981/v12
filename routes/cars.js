@@ -112,8 +112,8 @@ router.get("/:id/edit",middleware.checkcarOwnership,function(req,res){
 // UPDATE car ROUTE
 router.post("/:id",function(req,res){
 
-    req.body.car.description = req.body.car.description + lorem;
-    
+    req.body.car.description = req.body.car.description + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem;
+
     // findByIdAndUpdate is a build 
     car.findByIdAndUpdate(req.params.id,req.body.car, function (err,car){
         if(err)
