@@ -114,9 +114,7 @@ router.post("/:id",function(req,res){
 
     req.body.car.description = req.body.car.description + lorem + lorem + lorem + lorem + lorem + lorem + lorem + 
     lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + 
-    lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + 
-    lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + 
-    lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + 
+    
     lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem + lorem;
 
 
