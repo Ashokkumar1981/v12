@@ -16,7 +16,7 @@ var express                 = require("express"),
     seedDB = require("./seeds"),
     user = require("./models/user"),
     
-    // requireing routes
+    // requiring routes
     commentRoutes = require("./routes/comments"),
     carRoutes = require("./routes/cars"),
     indexRoutes = require("./routes/index");
@@ -63,4 +63,5 @@ app.use("/cars/:id/comments", commentRoutes);
 app.listen(3000, "0.0.0.0", function(){
     console.log("Cars Gallery App Server is listening!!!");
 });
+
 
