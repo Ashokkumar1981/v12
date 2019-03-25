@@ -20,12 +20,14 @@
     "request": "^2.85.0",
     "tail": "^1.2.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^1.18.10",
+    "ws": "3.3.2"
+  },
   "scripts": {
-     "start": "mongod --dbpath=/data/db --port 27017 --fork --logpath /var/log/mongod.log",
+    "start": "mongod --dbpath=/data/db --port 27017",
+     	 /* "start": "mongod --dbpath=/data/db --port 27017 --fork --logpath /var/log/mongod.log",*/
     "test": "echo \"Error: no test specified\" && exit 1"
-
-    
   },
   "author": "",
   "license": "ISC"

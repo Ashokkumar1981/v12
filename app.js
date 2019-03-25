@@ -28,7 +28,7 @@ var express                 = require("express"),
 app.use(bodyparser.urlencoded({extended:true}));
 app.use(express.static(__dirname + "/public"));
 app.set("view engine","ejs");
-mongoose.connect("mongodb://localhost/cars_v12");
+mongoose.connect("mongodb://localhost/cars_v12",{useNewUrlParser:true});
 app.use(methodOverride("_method"));
 app.use(flash());
 
